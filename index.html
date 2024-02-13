@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI library management system</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav id="head">
+            <h1>Library Management System</h1>
+        </nav>
+        <section id="addBook">
+            <h2>Add New Books</h2>
+            <label for="Book Title">Book Tittle : </label>
+            <input class="inpt" id="title" name="Book Title" type="text"  placeholder="Book Title"><br>
+            <label for="Book Id">Book Id no. :</label>
+            <input class="inpt" id="id" name="Book Id" type="number"  placeholder="Book Id"><br>
+            <label for="Book Author">Book Author : </label>
+            <input class="inpt" id="author" name="Book Author" type="text"  placeholder="Book Author"><br>
+            <div id="addButton">
+                <button  onclick="addBook()">Add Book</button>
+            </div>                                                  
+        </section>
+        <section  id="bookList">
+            <h2>Available Books </h2>
+            <table class="inpt">
+                <thead>
+                    <tr >
+                        <th>Book Id</th>
+                        <th>Book Title</th>
+                        <th>Book Author</th>
+                        <th>Status</th>
+                        <th>Borrow/Return</th>
+                    </tr>
+                </thead>
+                <tbody id="list">
+
+                </tbody>
+ 
+            </table>
+            <div id="avBook">
+                <button onclick="bookList()">Book List</button>
+                
+            </div>
+            
+            
+        </section>
+        <section id="SearchBook">
+            <h2>Search Book</h2>
+            <label for="Book Title">Book Tittle : </label>
+            <input class="inpt" id="searchTitle" name="Book Title" type="text"  placeholder="Book Title"><br>
+            <div id="display">
+                
+            </div>
+            <div id="searchButton">
+                <button  onclick="searchBook()">Search</button>
+            </div>
+            
+        </section>
+    </div>    
+</body>
+</html>
+
